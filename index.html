@@ -25,38 +25,39 @@
 
 <body>
     <div id="wrap">
-        <div id="fullpage">
-            <header id="header">
-                <div class="inner">
-                    <h1><a href="#"><img src="images/logo.png" alt="o’neul"></a></h1>
 
-                    <nav>
-                        <ul class="gnb">
-                            <li><a href="#menu1">o’neul</a></li>
-                            <li><a href="#menu2">Menu</a></li>
-                            <li><a href="#menu3">People</a></li>
-                            <li><a href="#menu4">Room</a></li>
+        <header id="header">
+            <div class="inner">
+                <h1><a href="#menu1"><img src="images/logo.png" alt="o’neul"></a></h1>
+
+                <nav>
+                    <ul class="gnb">
+                        <li data-menuanchor="menu1"><a href="#menu1">o’neul</a></li>
+                        <li data-menuanchor="menu2"><a href="#menu2">Menu</a></li>
+                        <li data-menuanchor="menu3"><a href="#menu3">People</a></li>
+                        <li data-menuanchor="menu4"><a href="#menu4">Room</a></li>
+                    </ul>
+
+                    <button class="ham">메뉴보기</button>
+
+                    <div class="mgnb_wrap">
+                        <ul class="mgnb">
+                            <li><a href="#">o’neul</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">People</a></li>
+                            <li><a href="#">Room</a></li>
                         </ul>
 
-                        <button class="ham">메뉴보기</button>
+                        <button class="mgnb_close">메뉴닫기</button>
+                    </div>
+                </nav>
 
-                        <div class="mgnb_wrap">
-                            <ul class="mgnb">
-                                <li><a href="#">o’neul</a></li>
-                                <li><a href="#">Menu</a></li>
-                                <li><a href="#">People</a></li>
-                                <li><a href="#">Room</a></li>
-                            </ul>
-
-                            <button class="mgnb_close">메뉴닫기</button>
-                        </div>
-                    </nav>
-
-                    <a href="#" class="reservation">Reservation</a>
-                </div>
-            </header>
+                <a href="#" class="reservation">Reservation</a>
+            </div>
+        </header>
 
 
+        <div id="fullpage">
 
             <section class="visual section" data-anchor="menu1">
                 <video src="video/visual.mp4" muted loop playsinline data-autoplay></video>

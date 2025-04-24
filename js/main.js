@@ -1,5 +1,9 @@
 
 $('#fullpage').fullpage({
+
+    menu: '.gnb',
+    anchors: ['menu1', 'menu2', 'menu3', 'menu4'],
+
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: ['o’neul', 'Value', 'Menu', 'Room'],
@@ -7,10 +11,16 @@ $('#fullpage').fullpage({
     autoScrolling: true,
     responsiveWidth: 1024,
     onLeave: function (origin, destination, direction, trigger) {
-        if (destination == 5) {
-            $("#fp-nav").fadeOut();
+        if (destination == 2 || destination == 3 || destination == 4) {
+            $("header, #fp-nav").addClass("active");
         } else {
-            $("#fp-nav").fadeIn();
+            $("header, #fp-nav").removeClass("active");
+        }
+
+        if (destination == 5) {
+            $("header, #fp-nav").fadeOut();
+        } else {
+            $("header, #fp-nav").fadeIn();
         }
     }
 });
